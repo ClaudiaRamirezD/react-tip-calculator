@@ -7,9 +7,9 @@ export default function Results({
   disabled
 }) {
   return (
-    <section className="bg-cyan-900 rounded-2xl flex flex-col gap-10 p-10 text-white mt-10">
+    <section className="bg-cyan-900 rounded-2xl flex flex-col gap-10 p-10 text-white mt-10 md:w-1/2">
       <div className="flex justify-between items-center">
-        <p>
+        <p className="text-lg font-semibold">
           Tip Amount
           <br />
           <span className="text-sm text-white/70">/ person</span>
@@ -19,7 +19,7 @@ export default function Results({
         </h2>
       </div>
       <div className="flex justify-between items-center">
-        <p>
+        <p className="text-lg font-semibold">
           Total
           <br />
           <span className="text-sm text-white/70">/ person</span>
@@ -28,7 +28,11 @@ export default function Results({
           ${totalPerPerson.toFixed(2)}
         </h2>
       </div>
-      <ResetButton onClick={onReset} disabled={disabled} />
+      <ResetButton
+        onClick={onReset}
+        disabled={disabled}
+        className="md:mt-auto"
+      />
     </section>
   );
 }

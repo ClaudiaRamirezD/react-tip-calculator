@@ -28,13 +28,13 @@ export default function App() {
   };
 
   return (
-    <main className="bg-cyan-400 font-main h-screen flex flex-col items-center justify-between">
-    <h1 className="text-4xl my-[10%]  text-cyan-900 font-bold tracking-[1rem]">
+    <main className="bg-cyan-400 font-main h-screen md:h-full flex flex-col items-center justify-between md:justify-start">
+      <h1 className="text-4xl my-[10%] md:my-18  text-cyan-900 font-bold tracking-[1rem]">
         SPLI
         <br />
         <span>TTER</span>
       </h1>
-      <div className="bg-white rounded-t-2xl w-full p-8">
+      <div className="bg-white rounded-t-2xl w-full p-8 md:p-12 md:rounded-4xl md:mb-18 md:flex md:flex-row md:justify-between md:w-3/4 gap-8">
         <InputsSection
           bill={bill}
           setBill={setBill}

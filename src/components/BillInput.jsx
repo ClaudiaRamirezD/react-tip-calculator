@@ -12,7 +12,7 @@ export default function BillInput({ bill, setBill }) {
           step=".01"
           value={bill}
           onChange={(e) => setBill(e.target.value)}
-          className="w-full text-right p-2 text-input bg-cyan-300 text-cyan-900 font-bold rounded outline-cyan-400 cursor-pointer"
+          className="w-full text-right p-2 text-input bg-cyan-300 text-cyan-900 font-bold rounded outline-cyan cursor-pointer"
         />
         <img
           src="/images/icon-dollar.svg"

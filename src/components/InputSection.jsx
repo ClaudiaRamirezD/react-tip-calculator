@@ -4,7 +4,7 @@ import PeopleInput from "./PeopleInput";
 
 export default function InputsSection(props) {
   return (
-    <section className="flex flex-col gap-10 text-main">
+    <section className="flex flex-col gap-10 text-main md:w-1/2">
       <h2 className="sr-only">User Inputs</h2>
       <BillInput bill={props.bill} setBill={props.setBill} />
       <TipSelect

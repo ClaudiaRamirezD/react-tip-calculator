@@ -3,7 +3,7 @@
 @theme {
   --font-main: "Space Mono", monospace;
   --text-main: clamp(1.4rem, 1.3296rem + 0.1878vw, 1.6rem);
-  --text-input: clamp(2rem, 1.8366rem + 1.5023vw, 2.4rem);
+  --text-input: clamp(1.8rem, 1.7586rem + 0.1766vw, 2.2rem);
 
   --color-cyan: hsl(172, 67%, 45%);
   --color-cyan-900: hsl(183, 100%, 15%);
