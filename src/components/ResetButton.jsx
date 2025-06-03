@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function ResetButton({ onClick, disabled, className = "" }) {
   return (
     <button

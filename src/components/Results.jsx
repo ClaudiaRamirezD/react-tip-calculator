@@ -1,3 +1,4 @@
+import React from "react";
 import ResetButton from "./ResetButton";
 
 export default function Results({
