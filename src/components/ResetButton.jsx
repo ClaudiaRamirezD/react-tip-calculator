@@ -3,10 +3,10 @@ export default function ResetButton({ onClick, disabled }) {
     <button
       onClick={onClick}
       disabled={disabled}
-      className={`w-full uppercase p-4 rounded font-bold shadow-md transition-colors ${
+      className={`w-full uppercase p-2 rounded-2xl font-bold shadow-md transition-colors cursor-pointer text-input ${
         disabled
-          ? "bg-cyan-800 text-cyan-900 cursor-not-allowed opacity-50"
-          : "bg-cyan-400 text-cyan-900 hover:bg-cyan-300"
+          ? "bg-cyan text-cyan-900 cursor-not-allowed opacity-50"
+          : "bg-cyan text-cyan-900 hover:bg-cyan-300"
       }`}
     >
       Reset

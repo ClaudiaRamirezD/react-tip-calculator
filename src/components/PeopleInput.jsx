@@ -11,7 +11,7 @@ export default function PeopleInput({ people, setPeople, error, setError }) {
         Number of People
       </label>
       {error && (
-        <span className="absolute right-4 top-0 text-red-600 font-bold text-sm">
+        <span className="absolute right-4 top-2 text-red-600 font-bold text-sm">
           Can't be zero
         </span>
       )}
@@ -22,14 +22,14 @@ export default function PeopleInput({ people, setPeople, error, setError }) {
           id="people"
           value={people}
           onChange={handleChange}
-          className={`w-full text-right p-4 text-2xl bg-cyan-100 text-cyan-900 font-bold rounded outline-cyan-400 ${
+          className={`cursor-pointer w-full text-right p-4 text-input bg-cyan-300 text-cyan-900 font-bold rounded outline-cyan-400 ${
             error ? "outline-red-600" : ""
           }`}
         />
         <img
           src="/images/icon-person.svg"
           alt="person"
-          className="absolute left-4 top-1/2 transform -translate-y-1/2"
+          className="absolute left-4 top-1/2 transform -translate-y-1/2 size-5"
         />
       </div>
     </div>
