@@ -1,6 +1,9 @@
 import { useState } from "react";
+
 import InputsSection from "./components/InputSection";
 import Results from "./components/Results";
+import calculateTipAndTotal from "./utils/calculateTipAndTotal";
+
 import "./App.css";
 
 export default function App() {
@@ -10,14 +13,6 @@ export default function App() {
   const [people, setPeople] = useState("");
   const [error, setError] = useState(false);
 
-  const numericBill = parseFloat(bill);
-  const numericPeople = parseInt(people);
-  const selectedTip = tip ?? (customTip ? parseFloat(customTip) / 100 : null);
-
-  const isValid = numericBill > 0 && numericPeople > 0 && selectedTip != null;
-
-  const tipAmount = isValid ? (numericBill * selectedTip) / numericPeople : 0;
-  const totalPerPerson = isValid ? numericBill / numericPeople + tipAmount : 0;
 
   const handleReset = () => {
     setBill("");
@@ -26,6 +21,13 @@ export default function App() {
     setPeople("");
     setError(false);
   };
+
+  const { tipAmount, totalPerPerson, isValid } = calculateTipAndTotal(
+    bill,
+    tip,
+    customTip,
+    people
+  );
 
   return (
     <main className="bg-cyan-400 font-main h-screen md:h-full flex flex-col items-center justify-between md:justify-start">
