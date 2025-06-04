@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import InputsSection from "./components/InputSection";
 import Results from "./components/Results";
-import calculateTipAndTotal from "./utils/calculateTipAndTotal";
+import { calculateTipAndTotal } from "./utils/calculateTipAndTotal";
 
 import "./App.css";
 
