@@ -17,7 +17,7 @@ export default function TipSelect({ tip, setTip, customTip, setCustomTip }) {
               tip === value / 100
                 ? "bg-cyan text-cyan-900"
                 : "bg-cyan-900 text-cyan-300"
-            } text-input font-bold p-4 rounded-xl text-center hover:bg-red-300 hover:text-yellow-900 cursor-pointer`}
+            } text-input font-bold p-4 rounded-xl text-center btn-tip-hover cursor-pointer`}
           >
             {value}%
           </button>

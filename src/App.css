@@ -13,3 +13,10 @@
   --color-cyan-300: hsl(189, 41%, 97%);
   --color-white-100: hsl(0, 0%, 100%);
 }
+
+@media (hover: hover) {
+  .btn-tip-hover:hover {
+    background-color: hsl(185, 41%, 84%) !important; /* cyan-300 */
+    color: hsl(183, 100%, 15%) !important;           /* cyan-900 */
+  }
+}

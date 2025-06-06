@@ -30,7 +30,7 @@ export default function App() {
   );
 
   return (
-    <main className="bg-cyan-400 font-main h-screen md:h-full flex flex-col items-center justify-between md:justify-start">
+    <main className="bg-cyan-400 font-main h-screen md:h-full flex flex-col items-center justify-between md:justify-start min-w-[320px] ">
       <h1 className="text-4xl my-[10%] md:my-18  text-cyan-900 font-bold tracking-[1rem]">
         SPLI
         <br />
